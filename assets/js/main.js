@@ -1,7 +1,5 @@
 
 
-/* ---------- Utilidades compartidas ---------- */
-
 function estrellasHTML(valor, extra) {
   const pct = Math.max(0, Math.min(100, (Number(valor) / 5) * 100));
   return `<span class="stars ${extra || ''}" role="img" aria-label="Calificación: ${Number(valor)} de 5 estrellas">
