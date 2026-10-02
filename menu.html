@@ -112,12 +112,23 @@
 
         <h2 id="titulo-carta" class="sr-only">Explorador de la carta</h2>
 
-        <!-- Búsqueda + precio -->
+        <!-- Búsqueda + tipo + precio -->
         <div class="flex flex-col sm:flex-row gap-4 mb-6">
           <div class="input-buscador">
             <i data-lucide="search" aria-hidden="true"></i>
             <label for="buscador" class="sr-only">Buscar plato por nombre o ingrediente</label>
             <input id="buscador" type="search" placeholder="Buscar por nombre o ingrediente (ej. pato, lúcuma…)" autocomplete="off">
+          </div>
+          <div>
+            <label for="filtro-tipo" class="sr-only">Filtrar por tipo de plato</label>
+            <select id="filtro-tipo" class="select-filtro w-full sm:w-auto">
+              <option value="todos">Tipo: todos</option>
+              <option value="carne">Carne</option>
+              <option value="mar">Pescados y mariscos</option>
+              <option value="vegetariano">Vegetariano</option>
+              <option value="dulce">Dulces y postres</option>
+              <option value="bebida">Bebidas</option>
+            </select>
           </div>
           <div>
             <label for="filtro-precio" class="sr-only">Filtrar por rango de precio</label>
